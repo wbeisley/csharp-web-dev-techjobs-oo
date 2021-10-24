@@ -19,13 +19,13 @@ namespace TechJobsOO
             nextId++;
         }
 
-        public Job(string name, object employerName, object employerLocation, object jobType, object jobCoreCompetency)
+        public Job(string name, Employer employerName, Location employerLocation, PositionType jobType, CoreCompetency jobCoreCompetency) : this()
         {
             Name = name;
             EmployerName = employerName;
             EmployerLocation = employerLocation;
-            PositionType = jobType;
-            CoreCompetency = jobCoreCompetency;
+            JobType = jobType;
+            JobCoreCompetency = jobCoreCompetency;
         }
         // TODO: Generate Equals() and GetHashCode() methods.
         
