@@ -7,6 +7,7 @@ namespace TechJobsTests
     public class JobTests
     {
         Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
+        Job job2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
 
         [TestMethod]
         public void TestSettingJobId()
@@ -29,10 +30,10 @@ namespace TechJobsTests
 
         }
 
-        //[TestMethod]
-        //public void TestJobsForEquality()
-        //{
-
-        //}
+        [TestMethod]
+        public void TestJobsForEquality()
+        {
+            Assert.IsFalse(job1 == job2);
+        }
     }
 }
