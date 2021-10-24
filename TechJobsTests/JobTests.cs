@@ -35,5 +35,12 @@ namespace TechJobsTests
         {
             Assert.IsFalse(job1 == job2);
         }
+
+        [TestMethod]
+
+        public void ToStringTest()
+        {
+
+        }
     }
 }
