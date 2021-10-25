@@ -43,12 +43,12 @@ namespace TechJobsOO
         public override string ToString()
         {
             string jobInfo = 
-                $"ID: {Id} <br>" +
-                $"Name: {Name} <br>" +
-                $"Employer: {EmployerName} <br>" +
-                $"Location: {EmployerLocation} <br>" +
-                $"Position Type: {JobType} <br>" +
-                $"Core Competency: {JobCoreCompetency}";
+                $"ID: {Id} \n" +
+                $"Name: {Name} \n" +
+                $"Employer: {EmployerName} \n" +
+                $"Location: {EmployerLocation} \n" +
+                $"Position Type: {JobType} \n" +
+                $"Core Competency: {JobCoreCompetency}\n";
 
             return jobInfo;
         }
